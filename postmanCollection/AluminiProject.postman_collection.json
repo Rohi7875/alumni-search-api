@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "c30a63fe-4a1d-4de9-a295-a48f72ddd85a",
+		"name": "AluminiProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "2692808",
+		"_collection_link": "https://galactic-meadow-988866.postman.co/workspace/My-Workspace~f5c404b1-c7fe-4e7c-8810-f079d96bc9bc/collection/2692808-c30a63fe-4a1d-4de9-a295-a48f72ddd85a?action=share&source=collection_link&creator=2692808"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 10,\r\n    \"name\": \"John Doe\",\r\n    \"email\": \"john.doe@example.com\",\r\n    \"latitude\": 17.385044,\r\n    \"longitude\": 78.486671,\r\n    \"networks\": [\r\n        1,\r\n        2\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/alumni-search-api/public/index.php?action=update_user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"alumni-search-api",
+						"public",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "update_user"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Nearets Location",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/alumni-search-api/public/index.php?action=get_alumni&user_id=1&radius=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"alumni-search-api",
+						"public",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "get_alumni"
+						},
+						{
+							"key": "user_id",
+							"value": "1"
+						},
+						{
+							"key": "radius",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
