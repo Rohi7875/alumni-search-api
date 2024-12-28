@@ -1,0 +1,21 @@
+Overview
+
+
+
+The Alumni Search API is a PHP-based application designed to facilitate searching for alumni in the same city based on geolocation. It efficiently handles large datasets (1M+ records) and supports CRUD operations for users and their associations with alumni networks.
+
+
+
+Features
+
+
+
+Update User Details: Modify user information including location and alumni network associations.
+
+
+
+Search Nearby Alumni: Retrieve alumni geographically close to the user within a specified radius.
+
+
+
+Optimized for Performance: Indexing and optimized queries for efficient data retrieval.
